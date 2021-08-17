@@ -16,3 +16,11 @@
     text-align: center;
 }
 
+.box:hover {
+    background-color: rgb(195, 195, 195);
+}
+
+.box:active {
+    background-color: rgb(150, 150, 150);
+}
+
