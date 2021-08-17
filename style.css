@@ -1,7 +1,16 @@
+.container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
 .board {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 3fr 3fr 3fr;
+    position: fixed;
+    top: 15%;
+    left: 33%;
     width: 600px;
     height: 600px;
     font-family: 'Courier New', Courier, monospace;
