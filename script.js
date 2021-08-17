@@ -1,7 +1,5 @@
-import {gameBoard} from "./gameBoard.js";
-import {player} from "./player.js";
-import {displayBoard} from "./displayBoard.js";
-// import {boxes} from "./gridBoxes.js";
-import {setupGame} from "./gameFlow.js";
+import { gameBoard } from "./gameBoard.js";
+import { displayBoard } from "./displayBoard.js";
+import { setupGame } from "./gameFlow.js";
 
-setupGame(gameBoard, player, displayBoard);
+setupGame(gameBoard, displayBoard);
