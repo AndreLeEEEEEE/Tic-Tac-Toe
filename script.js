@@ -1,8 +1,7 @@
-import {gameBoard} from "./gameBoard.js"
-import {displayBoard} from "./displayBoard.js"
+import {gameBoard} from "./gameBoard.js";
+import {player} from "./player.js";
+import {displayBoard} from "./displayBoard.js";
+// import {boxes} from "./gridBoxes.js";
+import {setupGame} from "./gameFlow.js";
 
-let player = (symbol) => {
-    return { symbol };
-}
-
-displayBoard(gameBoard.symbols);
+setupGame(gameBoard, player, displayBoard);
