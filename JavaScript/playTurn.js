@@ -35,3 +35,7 @@ export function playTurn(box, boxes, playerOne, playerTwo) {
         }
     }
 }
+
+export function resetTurn() {
+    turnOrder = true;
+}
