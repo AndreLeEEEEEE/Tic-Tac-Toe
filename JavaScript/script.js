@@ -1,5 +1,4 @@
-import { gameBoard } from "./gameBoard.js";
-import { displayBoard } from "./displayBoard.js";
-import { setupGame } from "./gameFlow.js";
+import { playGame } from "./playGame.js";
+import { Player } from "./player.js";
 
-setupGame(gameBoard, displayBoard);
+playGame(Player("A", "X"), Player("B", "O"));

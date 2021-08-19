@@ -1,8 +1,13 @@
-import { playerOne, playerTwo } from "./player.js";
-import { nextTurn } from "./nextTurn.js";
+import { gameBoard } from "./gameBoard.js";
+import { displayBoard } from "./displayBoard.js";
+let turnOrder = true;
 
-export function playTurn(box) {
+export function playTurn(box, playerOne, playerTwo) {
     if (box.innerText === "") {
-        box.innerText = nextTurn() ? playerTwo.symbol : playerOne.symbol;
+        box.innerText = turnOrder ? playerOne.symbol : playerTwo.symbol;
     }
+    turnOrder = !turnOrder;
+
+    gameBoard.symbols[Number(box.id)] = box.innerText;
+    displayBoard(gameBoard.symbols);
 }
