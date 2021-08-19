@@ -2,6 +2,7 @@
     position: relative;
     text-align: center;
     width: 100%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .board {
@@ -13,9 +14,23 @@
     left: 33%;
     width: 600px;
     height: 600px;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 10rem;
     border: solid black thick;
+}
+
+.victory {
+    position: fixed;
+    z-index: 9;
+    top: 35%;
+    left: 38%;
+    border: solid black thick;
+    width: 400px;
+    height: 200px;
+    font-size: 3rem;
+    display: none;
+    color: black;
+    background-color: white;
+    text-align: center;
 }
 
 .box {
